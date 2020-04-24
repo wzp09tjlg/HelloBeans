@@ -3,4 +3,23 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!--  rootView 的背景颜色   -->
+    <color name="root_view_background">#dd000000</color>
+    <color name="root_view_background_night">#dddddd</color>
+    <color name="root_view_background_red">#00ff00</color>
+
+    <!--  Text的背景颜色 和 文字颜色   -->
+    <color name="text_view_text_color">#ff6900</color>
+    <color name="text_view_text_color_night">#0069ff</color>
+    <color name="text_view_text_color_red">#693300</color>
+
+    <!--  button的背景颜色 和 文字颜色   -->
+    <color name="button_text_color">#00ff69</color>
+    <color name="button_text_color_night">#6900ff</color>
+    <color name="button_text_color_red">#699933</color>
+    <color name="button_background_color">#F0F0F0</color>
+    <color name="button_background_color_night">#444B5C</color>
+    <color name="button_background_color_red">#4c005C</color>
+
 </resources>
