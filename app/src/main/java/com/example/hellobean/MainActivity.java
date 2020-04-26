@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toast.makeText(this, "Hello Bean,I am here", Toast.LENGTH_SHORT).show();
     }
 
+    //换肤的整体框架测验
     private void goSubSkinActivity() {
         Intent goIntent = new Intent(this, SkinSubActivity.class);
         startActivity(goIntent);
