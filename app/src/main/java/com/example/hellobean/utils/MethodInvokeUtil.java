@@ -15,7 +15,7 @@ public final class MethodInvokeUtil {
     //打印调用的栈信息
     public static void printInvokeStack() {
         StringBuilder tempBuilder = new StringBuilder();
-        StackTraceElement[] currentThreadTrace = Thread.getAllStackTraces().get(Thread.currentThread());
+        StackTraceElement[] currentThreadTrace = Thread.currentThread().getStackTrace();
         tempBuilder.append("\n ThreadName:").append(Thread.currentThread().getName()).append("\n");
         for (StackTraceElement element : currentThreadTrace) {
             tempBuilder.append("\t").append(element).append("\n");
@@ -26,7 +26,7 @@ public final class MethodInvokeUtil {
     //打印调用的栈信息
     public static void printInvokeStack(String tag) {
         StringBuilder tempBuilder = new StringBuilder();
-        StackTraceElement[] currentThreadTrace = Thread.getAllStackTraces().get(Thread.currentThread());
+        StackTraceElement[] currentThreadTrace = Thread.currentThread().getStackTrace();
         tempBuilder.append("\n ThreadName:").append(Thread.currentThread().getName()).append("\n");
         for (StackTraceElement element : currentThreadTrace) {
             tempBuilder.append("\t").append(element).append("\n");
@@ -36,7 +36,7 @@ public final class MethodInvokeUtil {
 
     //打印调用的栈信息
     public static void printInvokeStack(String tag, String msg) {
-        StackTraceElement[] currentThreadTrace = Thread.getAllStackTraces().get(Thread.currentThread());
+        StackTraceElement[] currentThreadTrace = Thread.currentThread().getStackTrace();
         StringBuilder tempBuilder = new StringBuilder();
         tempBuilder.append("msg:")
                 .append(msg)
@@ -50,7 +50,7 @@ public final class MethodInvokeUtil {
 
     //打印调用的栈信息
     public static void printInvokeStackMsg(String msg) {
-        StackTraceElement[] currentThreadTrace = Thread.getAllStackTraces().get(Thread.currentThread());
+        StackTraceElement[] currentThreadTrace = Thread.currentThread().getStackTrace();
         StringBuilder tempBuilder = new StringBuilder();
         tempBuilder.append("msg:")
                 .append(msg)
